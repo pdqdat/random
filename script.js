@@ -18,5 +18,15 @@ function createTags(input) {
         .split(",")
         .filter((tag) => tag.trim() !== "")
         .map((tag) => tag.trim());
-    console.log(tags);
+
+    // clear the tags element
+    tagsElement.innerHTML = "";
+
+    // create a span element for each tag and add it to the tags element, then add the tag text to the span element
+    tags.forEach((tag) => {
+        const tagElement = document.createElement("span");
+        tagElement.classList.add("tag");
+        tagElement.innerText = tag;
+        tagsElement.appendChild(tagElement);
+    });
 }
