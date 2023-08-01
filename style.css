@@ -10,10 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    padding-top: 5rem;
 }
 
 h3 {
@@ -22,7 +22,8 @@ h3 {
 }
 
 .container {
-    width: 500px;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a maximum width for large screens */
 }
 
 textarea {
@@ -48,4 +49,20 @@ textarea {
 
 .tag.highlight {
     background-color: #273c75;
+}
+
+/* Media Queries for responsiveness */
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* For even smaller screens */
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
 }
