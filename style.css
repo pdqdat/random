@@ -86,3 +86,20 @@ textarea {
         width: 95%;
     }
 }
+
+/* For larger screens */
+@media (min-width: 992px) {
+    textarea {
+        font-size: 18px;
+        padding: 20px;
+        height: 120px; /* Increase height for larger screens */
+    }
+
+    .tag {
+        font-size: 16px; /* Increase tag font size for larger screens */
+    }
+
+    .tag.highlight {
+        font-size: 18px; /* Increase highlighted tag font size for larger screens */
+    }
+}
